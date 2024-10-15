@@ -1,29 +1,20 @@
-*ombra background ricerca: #666666
+*ombra background ricerca: #00000099
 
 _barra a scomparsa: #f8f8f8
- link Area giochi: #b5d7fc
+ link Area giochi: #ABD9FF
 
-_navbar: #f8d640
- link Novità: white/black ; testo #d9772c
+_navbar: #FFD502
+ link Holiday: white/black ; testo #D0021B
 
-_Set in evidenza: (background: #e4e5eb) ; [novità: #f8d640] ; [aggiungi al carrello: #d9772c] 
+_background: #E4E5EB
  freccia a dx: #cdced3
- slider in basso: #57585a ; (background: #c2c3c8)
-
-_Esplora tutti i set dedicati ai videogiochi: (background: #4b1d8a) ; (card: #2e205c) ; [novità: #f8d640]  [Aggiungi al carrello: #4699b6]
- Visualizza tutti: #baa8d2
- slider in basso: #baa8d2; (background: #663f9b)
  
-_E non è tutto...: (background: #2e205c)
+ Slider carosello: #0000008C; (background: #00000026)
 
-_link Esplora: #666666/#545454
+_Lascia scegliere a loro: #EC9F59
 
-_Lascia scegliere a loro: #ec9f59
+_lavorate in squadra: #F8D63F
 
-_lavorate in squadra: #f8d63f
+_Ti diamo il benvenuto: #F2F2F2
 
-_Visualizza tutti gli articoli: #4b4b4d
-
-_Ti diamo il benvenuto: #f2f2f2
-
-_footer: #201e46 ; [Italia: #18152c] ; (submit newsletter: #d9782d) ; social: #121028
+_footer: #201D48; [Italia: #18152D] ; (submit newsletter: #E96F14)
