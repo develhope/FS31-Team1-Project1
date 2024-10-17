@@ -1,0 +1,32 @@
+root{
+    --nav-bg-color: #FFD502; 
+  --main-head-foot-color: #E4E5EB; 
+  --dream-bg-color: #00A3DA;
+  --footer-bg-color: #201D48;
+  --font-family-primary: 'Cera Pro', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-title-1: 2rem;
+  --font-size-title-2: 1.25rem;
+  --font-size-title-3: 1.125rem;
+  --font-size-small: 0.875rem;
+  --font-size-smaller:0.75rem
+  --font-weight-normal: 400;
+  --font-weight-heavy: 500;
+  --area-giochi-bgcolor: #ABD9FF;
+   --area-giochi-bgcolor-hover: #FFFFFF;
+   --promo-bgcolor: #FFFFFF;
+   --promo-bgcolor-hover: #000000;
+   --buy-now-bgcolor: #005AD2;
+   --add-cart-bgcolor: #E96F14;
+   --add-cart-bgcolor-hover: #FFFFFF;
+   --dreamz-bgcolor: #00A3DA;
+   --dreamz-bgcolor-hover: #021C47;
+   --see-all-bgcolor: #00A3DA;
+   --see-all-bgcolor-hover: #5b5c5e;
+   --button-border-radius-light: 3px;
+   --button-border-radius-heavy: 4px;
+   --button-padding-small: 5px 20px ;
+   --button-padding-mid: ; 10px 18px;
+   --button-padding-big:  15px;
+   --button-padding-allArticles: 0px 16px;
+}
