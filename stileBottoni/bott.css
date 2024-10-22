@@ -1,0 +1,345 @@
+:root{
+    --nav-bg-color: #FFD502; 
+  --main-head-foot-color: #E4E5EB; 
+  --dream-bg-color: #00A3DA;
+  --footer-bg-color: #201D48;
+  --font-family-primary: 'Cera Pro', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-title-1: 2rem;
+  --font-size-title-2: 1.25rem;
+  --font-size-title-3: 1.125rem;
+  --font-size-small: 0.875rem;
+  --font-size-smaller:0.75rem;
+  --font-weight-normal: 400;
+  --font-weight-heavy: 500;
+  --area-giochi-bgcolor: #ABD9FF;
+   --area-giochi-bgcolor-hover: #FFFFFF;
+   --promo-bgcolor: #FFFFFF;
+   --promo-bgcolor-hover: #000000;
+   --buy-now-bgcolor: #005AD2;
+   --add-cart-bgcolor: #E96F14;
+   --add-cart-bgcolor-hover: #FFFFFF;
+   --dreamz-bgcolor: #00A3DA;
+   --dreamz-bgcolor-hover: #021C47;
+   --see-all-bgcolor: #00A3DA;
+   --see-all-bgcolor-hover: #5b5c5e;
+   --button-border-radius-light: 3px;
+   --button-border-radius-heavy: 4px;
+   --button-padding-small: 5px 20px;
+   --button-padding-mid: 10px 18px;
+   --button-padding-big: 15px;
+   --button-padding-allArticles: 8px 16px;
+
+   
+}
+
+
+body{
+    font-family: var(--font-family-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    
+}
+
+.zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.1875rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--area-giochi-bgcolor);
+    color: #000000;
+    padding: 0px 10px;
+    font-size: var(--font-size-smaller);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    width: auto;
+    letter-spacing: normal;
+    box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+}
+    
+.zero:hover{
+    background-color:var(--area-giochi-bgcolor-hover);
+}
+.zero svg{
+    width: 18px;
+    height: 13px;
+    margin-right: 10px;
+    transform: scaleX(-1);
+}
+
+
+.primo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: none;
+    cursor: pointer;
+    background-color: var(--promo-bgcolor);
+    color: #D0021B;
+    padding: var(--button-padding-small);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    line-height: 1.5rem;
+}   
+.primo:hover {
+    background-color: var(--promo-bgcolor-hover);
+    color: #FFFFFF;
+}
+.secondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 1px solid;
+    cursor: pointer;
+    background-color: var(--promo-bgcolor);
+    color: #000000;
+    padding: var(--button-padding-mid);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    letter-spacing: normal;
+}   
+.secondo:hover{
+    background-color: var(--promo-bgcolor-hover);
+    color: #FFFFFF;
+}
+.secondo svg{
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+}
+.terzo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 1px solid;
+    cursor: pointer;
+    background-color: var(--promo-bgcolor);
+    color: #000000;
+    padding: var(--button-padding-mid);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    letter-spacing: normal;
+}   
+.terzo:hover{
+    background-color: var(--promo-bgcolor-hover);
+    color: #FFFFFF;
+}
+.terzo svg{
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+}
+.quarto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 2px solid #E96F14;
+    cursor: pointer;
+    background-color: var(--add-cart-bgcolor);
+    color: #000000;
+    padding: var(--button-padding-big);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+}   
+.quarto:hover{
+    background-color: var(--add-cart-bgcolor-hover);
+    
+}
+
+.quinto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 2px solid #00A3DA;
+    cursor: pointer;
+    background-color: var(--dream-bg-color);
+    color: #000000;
+    padding: var(--button-padding-big);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+}   
+.quinto:hover{
+    background-color: var(--dreamz-bgcolor-hover);
+    color: var(--add-cart-bgcolor-hover);
+    border: 2px solid var(--dreamz-bgcolor-hover);
+}
+.sesto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 1px solid #005AD2;
+    cursor: pointer;
+    background-color: var(--buy-now-bgcolor);
+    color: var(--add-cart-bgcolor-hover);
+    padding: var(--button-padding-big);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    line-height: 1.1875rem;
+    border-collapse: collapse;
+    width: auto;
+}   
+.sesto:hover{
+    background-color: var(--area-giochi-bgcolor-hover);
+    color: var(--promo-bgcolor-hover);
+}
+
+.settimo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 1px solid;
+    cursor: pointer;
+    background-color: var(--promo-bgcolor);
+    color: #000000;
+    padding: var(--button-padding-mid);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    letter-spacing: normal;
+}   
+.settimo:hover{
+    background-color: var(--promo-bgcolor-hover);
+    color: #FFFFFF;
+}
+.settimo svg{
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+}
+
+.ottavo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 1px solid;
+    cursor: pointer;
+    background-color: var(--promo-bgcolor);
+    color: #000000;
+    padding: var(--button-padding-mid);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    letter-spacing: normal;
+}   
+.ottavo:hover{
+    background-color: var(--promo-bgcolor-hover);
+    color: #FFFFFF;
+}
+.ottavo svg{
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+}
+
+.nono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 1px solid;
+    cursor: pointer;
+    background-color: var(--promo-bgcolor);
+    color: #000000;
+    padding: var(--button-padding-mid);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    letter-spacing: normal;
+}   
+.nono:hover{
+    background-color: var(--promo-bgcolor-hover);
+    color: #FFFFFF;
+}
+.nono svg{
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+}
+
+.decimo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62.4375rem;
+    border: 2px solid;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
+    padding: var(--button-padding-allArticles);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5rem;
+    width: max-content;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+}   
+.decimo:hover{
+    background-color:rgba(0, 0, 0, 0.63);
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.decimo svg{
+    width: 18px;
+    height: 13px;
+    margin-left: 12px;
+}
+.undicesimo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62.4375rem;
+    border: 2px solid var(--see-all-bgcolor-hover);
+    cursor: pointer;
+    background-color:#e4e5ec;
+    color: #141414;
+    padding: var(--button-padding-allArticles);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5rem;
+    width: max-content;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+}   
+.undicesimo:hover{
+    background-color:var(--see-all-bgcolor-hover);
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.undicesimo svg{
+    width: 18px;
+    height: 13px;
+    margin-left: 12px;
+}
+
