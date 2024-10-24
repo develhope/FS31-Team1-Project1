@@ -33,20 +33,20 @@
  
 }
 
+*{
 
-body{
-  font-family: var(--font-family-primary);
-  display: flex;
-  flex-direction: column;
 }
-
-section {
+main {
+  display: flex;
+}
+.bottoni {
+  font-family: var(--font-family-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  width: 100%;
+  width: 30%;
   padding: 50px;
   
 }
@@ -343,3 +343,92 @@ section {
   margin-left: 12px;
 }
 
+.main-font {
+  display: flex;
+  flex-direction: column;
+  background-color: #c0c0c0;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+.main-font-declaration{
+  display: flex;
+  gap: 10px;
+  background-color: #e4e5ec;
+  padding: 0 20px;
+  border-radius: 8px;
+}
+.font-styling{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #c0c0c0;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 10px 20px;
+
+}
+.h2{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e5ec;
+  padding: 5px;
+  border-radius: 8px;
+}
+.h3{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e5ec;
+  padding: 5px;
+  border-radius: 8px;
+}
+.h2-variation{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e5ec;
+  padding: 5px;
+  border-radius: 8px;
+}
+.h3-variation{
+  display: flex;
+  gap: 15px;
+  align-items: center;  
+  justify-content: space-between;
+  background-color: #e4e5ec;
+  padding: 5px;
+  border-radius: 8px;
+}
+.main-span{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e5ec;
+  padding: 5px;
+  border-radius: 8px;
+}
+.main-span p:nth-child(1){
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.paragrafi{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e5ec;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.paragrafi p:nth-child(1){
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+}
