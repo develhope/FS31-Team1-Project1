@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --nav-bg-color: #FFD502; 
   --main-head-foot-color: #E4E5EB; 
@@ -12,6 +17,13 @@
   --font-size-smaller:0.75rem;
   --font-weight-normal: 400;
   --font-weight-heavy: 500;
+  --navbar-top-bgcolor: #f8f8f8;
+  --navbar-bottom-bgcolor: #FFD502;
+  --week-top-picks-bgcolor: #E4E5EB;
+  --dreamz-bgcolor: #4AA0D6;
+  --spotlight-bgcolor: #E4E5EB;
+  --welcometo-bgcolor: #F2F2F2;
+  --footer-bgcolor: #201D48;
   --area-giochi-bgcolor: #ABD9FF;
    --area-giochi-bgcolor-hover: #FFFFFF;
    --promo-bgcolor: #FFFFFF;
@@ -23,6 +35,10 @@
    --dreamz-bgcolor-hover: #021C47;
    --see-all-bgcolor: #00A3DA;
    --see-all-bgcolor-hover: #5b5c5e;
+   --explore-bgcolor: #00000099;
+   --explore-bgcolor-hover: #000000AB;
+   --see-all-articles-bgcolor: #e4e5ec;
+   --see-all-articles-bgcolor-hover: #000000AB;
    --button-border-radius-light: 3px;
    --button-border-radius-heavy: 4px;
    --button-padding-small: 5px 20px;
@@ -49,6 +65,67 @@ section {
     width: 100%;
     padding: 50px;
     
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--navbar-bottom-bgcolor);
+}
+
+.navbar-top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--navbar-top-bgcolor);
+}
+
+.navbar-bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--navbar-top-bgcolor);
+    background-color: var(--navbar-bottom-bgcolor);
+}
+
+.navbar-bottom ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.week-top-picks{
+    background-color: var(--week-top-picks-bgcolor);
+}
+
+.dreamz{
+    background-color: var(--dream-bg-color);
+}
+
+.spotlight{
+    background-color: var(--spotlight-bgcolor);
+}
+
+.welcometo{
+    background-color: var(--welcometo-bgcolor);
+}
+
+.footer{
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer-bg-color);
 }
 
 .zero{
@@ -295,7 +372,7 @@ section {
     border-radius: 62.4375rem;
     border: 2px solid;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--explore-bgcolor);
     color: #FFFFFF;
     padding: var(--button-padding-allArticles);
     font-size: var(--font-size-base);
@@ -306,7 +383,7 @@ section {
     box-sizing: border-box;
 }   
 .decimo:hover{
-    background-color:rgba(0, 0, 0, 0.63);
+    background-color:var(--explore-bgcolor-hover);
     color: #FFFFFF;
     text-decoration: underline;
 }
@@ -322,7 +399,7 @@ section {
     border-radius: 62.4375rem;
     border: 2px solid var(--see-all-bgcolor-hover);
     cursor: pointer;
-    background-color:#e4e5ec;
+    background-color:var(--see-all-articles-bgcolor);
     color: #141414;
     padding: var(--button-padding-allArticles);
     font-size: var(--font-size-base);
@@ -333,7 +410,7 @@ section {
     box-sizing: border-box;
 }   
 .undicesimo:hover{
-    background-color:var(--see-all-bgcolor-hover);
+    background-color: var(--see-all-articles-bgcolor-hover);
     color: #FFFFFF;
     text-decoration: underline;
 }
