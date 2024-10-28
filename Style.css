@@ -33,9 +33,7 @@
  
 }
 
-*{
 
-}
 main {
   display: flex;
 }
@@ -366,6 +364,7 @@ main {
   margin-top: 10px;
   border-radius: 8px;
   padding: 10px 20px;
+  font-family: var(--font-family-primary);
 
 }
 .h2{
