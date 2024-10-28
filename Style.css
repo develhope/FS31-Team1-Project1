@@ -509,3 +509,223 @@ main {
   text-transform: uppercase;
   font-weight: bolder;
 }
+
+/* card example Lego dreamZZ */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family-primary);
+  
+}
+.conteiner{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: var(--promo-bgcolor);
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+}
+.conteiner-img{
+  position: relative;
+  background-color: var(--promo-bgcolor);
+}
+.conteiner-img a:nth-of-type(2){
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+.conteiner-img img:nth-of-type(2) {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.conteiner-img:hover img {
+  transform: scale(1.05);
+}
+.wishlist-conteiner{
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.9375rem;
+  padding: 0 0.3125rem;
+  width: 100%;
+  
+}
+.wishlist-conteiner a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 90%;
+}
+
+.wishlist-conteiner img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.wishlist-conteiner img:hover {
+  transform: scale(1.1);
+}
+.badge-conteiner {
+  position: relative;
+  bottom: 16px;
+  left: 16px;
+  color: #333;
+  padding: 10px 0 0 0;
+  font-size: 0.8rem;
+}
+.badge-conteiner span{
+  background-color: var(--nav-bg-color);
+  padding: 4px 8px;
+}
+
+.conteiner-bottom{
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1.25rem 1.25rem;
+  background-color: var(--dreamz-bgcolor-hover);
+  text-align: start;
+}
+.conteiner-bottom a {
+  flex: 1 1 auto;
+  color: var(--promo-bgcolor);
+  cursor: pointer;
+  text-decoration: none;
+}
+.conteiner-bottom a:hover {
+  text-decoration: underline;
+}
+.conteiner-bottom a h3{
+  padding: 5px 0px;
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  font-weight: 500; 
+}
+
+.price-conteiner{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: var(--promo-bgcolor);
+  width: 100%;
+  min-height: 1.5625rem;
+}
+.price-conteiner span {
+  font-size: 1rem;
+  margin: 2px 0;
+  font-weight: bold;
+}
+
+/* end card example Lego Dreamzz */
+/* card example set in evidenza */
+.card-esempio{
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family-primary);
+}
+.immagine-card{
+  text-align: center
+}
+.immagine-card img{
+  display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+  
+
+.immagine-card img:hover{
+  transform: scale(1.05);
+}
+
+.descrizione{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.75rem 1.25rem 1.25rem;
+  background-color: rgb(228, 229, 236);
+}
+.descrizione h3{
+  color: rgb(0, 0, 0);
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    text-transform: inherit;
+    font-family: var(--font-family-primary);
+    font-weight: bold;
+}
+.stellette{
+  display: flex;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+}
+.prezzo{
+  font-size: clamp(1.125rem,.163265vw + 1.08673rem,1.25rem);
+    font-family: var(--font-family-primary);
+    letter-spacing: 0;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.button-quarto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--button-border-radius-heavy);
+  border: 2px solid #E96F14;
+  cursor: pointer;
+  background-color: var(--add-cart-bgcolor);
+  color: #000000;
+  padding: var(--button-padding-big);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 1.5625rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: var(--font-family-primary);
+}
+.button-quarto:hover{
+  background-color: var(--add-cart-bgcolor-hover);
+
+}
+.badge-conteiner {
+  position: relative;
+  bottom: 16px;
+  left: 16px;
+  color: #333;
+  padding: 10px 0 0 0;
+  font-size: 0.8rem;
+  display: flex;
+}
+.badge-conteiner span{
+  background-color: var(--nav-bg-color);
+  padding: 4px 8px;
+}
+.cuore{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cuore:hover{
+    transform: scale(1.1);
+
+}
+/* end card example set in evidenza*/
