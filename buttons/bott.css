@@ -24,8 +24,10 @@
   --spotlight-bgcolor: #E4E5EB;
   --welcometo-bgcolor: #F2F2F2;
   --footer-bgcolor: #201D48;
+  --black-button-text-color: #000000;
   --area-giochi-bgcolor: #ABD9FF;
    --area-giochi-bgcolor-hover: #FFFFFF;
+   --holiday-color: #D0021B;
    --promo-bgcolor: #FFFFFF;
    --promo-bgcolor-hover: #000000;
    --buy-now-bgcolor: #005AD2;
@@ -136,7 +138,7 @@ section {
     border: none;
     cursor: pointer;
     background-color: var(--area-giochi-bgcolor);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: 0px 10px;
     font-size: var(--font-size-smaller);
     font-weight: 500;
@@ -165,7 +167,7 @@ section {
     border: none;
     cursor: pointer;
     background-color: var(--promo-bgcolor);
-    color: #D0021B;
+    color: var(--holiday-color);
     padding: var(--button-padding-small);
     font-size: var(--font-size-base);
     font-weight: 400;
@@ -183,7 +185,7 @@ section {
     border: 1px solid;
     cursor: pointer;
     background-color: var(--promo-bgcolor);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-mid);
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -207,7 +209,7 @@ section {
     border: 1px solid;
     cursor: pointer;
     background-color: var(--promo-bgcolor);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-mid);
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -233,7 +235,7 @@ section {
     border: 2px solid #E96F14;
     cursor: pointer;
     background-color: var(--add-cart-bgcolor);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-big);
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -255,7 +257,7 @@ section {
     border: 2px solid #00A3DA;
     cursor: pointer;
     background-color: var(--dream-bg-color);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-big);
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -298,7 +300,7 @@ section {
     border: 1px solid;
     cursor: pointer;
     background-color: var(--promo-bgcolor);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-mid);
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -323,7 +325,7 @@ section {
     border: 1px solid;
     cursor: pointer;
     background-color: var(--promo-bgcolor);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-mid);
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -348,7 +350,7 @@ section {
     border: 1px solid;
     cursor: pointer;
     background-color: var(--promo-bgcolor);
-    color: #000000;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-mid);
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -400,7 +402,7 @@ section {
     border: 2px solid var(--see-all-bgcolor-hover);
     cursor: pointer;
     background-color:var(--see-all-articles-bgcolor);
-    color: #141414;
+    color: var(--black-button-text-color);
     padding: var(--button-padding-allArticles);
     font-size: var(--font-size-base);
     font-weight: 500;
