@@ -420,6 +420,9 @@ main {
   margin-left: 12px;
 }
 
+.typography{
+  max-width: 50%;
+}
 .main-font {
   display: flex;
   flex-direction: column;
