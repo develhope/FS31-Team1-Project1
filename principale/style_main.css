@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --nav-bg-color: #ffd502;
+  --main-head-foot-color: #e4e5eb;
+  --dream-bg-color: #00a3da;
+  --footer-bg-color: #201d48;
+  --font-family-primary: "Cera Pro", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-title-1: 2rem;
+  --font-size-title-2: 1.25rem;
+  --font-size-title-3: 1.125rem;
+  --font-size-small: 0.875rem;
+  --font-size-smaller: 0.75rem;
+  --font-weight-normal: 400;
+  --font-weight-heavy: 500;
+  --navbar-top-bgcolor: #f8f8f8;
+  --navbar-bottom-bgcolor: #ffd502;
+  --week-top-picks-bgcolor: #e4e5eb;
+  --dreamz-bgcolor: #4aa0d6;
+  --spotlight-bgcolor: #e4e5eb;
+  --welcometo-bgcolor: #f2f2f2;
+  --footer-bgcolor: #201d48;
+  --black-button-text-color: #000000;
+  --area-giochi-bgcolor: #abd9ff;
+  --area-giochi-bgcolor-hover: #ffffff;
+  --holiday-color: #d0021b;
+  --promo-bgcolor: #ffffff;
+  --promo-bgcolor-hover: #000000;
+  --buy-now-bgcolor: #005ad2;
+  --add-cart-bgcolor: #e96f14;
+  --add-cart-bgcolor-hover: #ffffff;
+  --dreamz-bgcolor: #00a3da;
+  --dreamz-bgcolor-hover: #021c47;
+  --see-all-bgcolor: #00a3da;
+  --see-all-bgcolor-hover: #5b5c5e;
+  --explore-bgcolor: #00000099;
+  --explore-bgcolor-hover: #000000ab;
+  --see-all-articles-bgcolor: #e4e5ec;
+  --see-all-articles-bgcolor-hover: #000000ab;
+  --button-border-radius-light: 3px;
+  --button-border-radius-heavy: 4px;
+  --button-padding-small: 5px 20px;
+  --button-padding-mid: 10px 18px;
+  --button-padding-big: 15px;
+  --button-padding-allArticles: 8px 16px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 20px;
+  background: var(--spotlight-bgcolor);
+  font-family: var(--font-family-primary);
+}
+.slider-title {
+  text-align: start;
+  margin-bottom: 10px;
+}
+.slider-title h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.slider-conteiner {
+  display: flex;
+  flex-direction: row;
+  /* gap: 20px; */
+  transition: transform 0.5s ease;
+}
+.card {
+  width: 20%;
+  min-width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: var(--area-giochi-bgcolor-hover);
+}
+.immagine-card {
+  text-align: center;
+}
+.immagine-card img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+  width: auto;
+  height: auto;
+}
+
+.immagine-card img:hover {
+  transform: scale(1.05);
+}
+
+.descrizione {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.75rem 1.25rem 1.25rem;
+  background-color: rgb(228, 229, 236);
+}
+.descrizione h3 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  text-transform: inherit;
+  font-family: var(--font-family-primary);
+  font-weight: bold;
+}
+.stellette {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+}
+.prezzo {
+  font-size: clamp(1.125rem, 0.163265vw + 1.08673rem, 1.25rem);
+  font-family: var(--font-family-primary);
+  letter-spacing: 0;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.quarto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--button-border-radius-heavy);
+  border: 2px solid #e96f14;
+  cursor: pointer;
+  background-color: var(--add-cart-bgcolor);
+  color: var(--black-button-text-color);
+  padding: var(--button-padding-big);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 1.5625rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100%;
+}
+.quarto:hover {
+  background-color: var(--add-cart-bgcolor-hover);
+}
+.badge-conteiner {
+  position: relative;
+  bottom: 16px;
+  left: 16px;
+  color: #333;
+  padding: 10px 0 0 0;
+  font-size: 0.8rem;
+  display: flex;
+}
+.badge-conteiner span {
+  background-color: var(--nav-bg-color);
+  padding: 4px 8px;
+}
+.cuore {
+  width: 24px;
+  height: 24px;
+  padding: 20px 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cuore:hover {
+  transform: scale(1.1);
+}
