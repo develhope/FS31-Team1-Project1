@@ -105,19 +105,19 @@ transform: rotate(180deg);
 
 /* scrollbar settings */
 .card::-webkit-scrollbar {
-  height: 8px; /* Impostiamo un'altezza ridotta per la scrollbar */
+  height: 8px; 
 }
 
 .card::-webkit-scrollbar-thumb {
-  background-color: var(--dreamz-bgcolor-hover); /* Colore della parte mobile della scrollbar */
+  background-color: var(--dreamz-bgcolor-hover); 
 }
 
 .card::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Colore della scrollbar quando passa sopra */
+  background-color: #555; /
 }
 
 .card::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Colore di sfondo della track */
+  background-color: #f1f1f1; 
   
 }
 /* end scrollbar settings */
