@@ -73,21 +73,60 @@ margin: 20px;
 
 /* cards */
 
-.scrollbar{
-  position: relative;
-    align-self: center;
-    width: 100%;
-    cursor: pointer;
-    
-    margin: 0.3125rem auto -0.9375rem;
-    overflow-x: auto;
+.frecce-link-slide{
+  display: flex;
+  align-items: center;
+  padding: 0px 1.25rem;
+  border: none;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+transform: rotate(180deg);
+  transition: opacity 250ms ease 0s;
+  background-color: transparent;
+  left: -1.25rem;
+  border-radius: 50%;
+ 
 }
+.frecce-link-slide2{
+  display: flex;
+  align-items: center;
+  padding: 0px 1.25rem;
+  border: none;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  transition: opacity 250ms ease 0s;
+  background-color: var(--dreamz-bgcolor);
+  right: -1.25rem;
+ 
+
+}
+
+/* scrollbar settings */
+.card::-webkit-scrollbar {
+  height: 8px; /* Impostiamo un'altezza ridotta per la scrollbar */
+}
+
+.card::-webkit-scrollbar-thumb {
+  background-color: var(--dreamz-bgcolor-hover); /* Colore della parte mobile della scrollbar */
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Colore della scrollbar quando passa sopra */
+}
+
+.card::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Colore di sfondo della track */
+  
+}
+/* end scrollbar settings */
 .card{
    position: relative;
    gap: 40px;
    display: flex;
-   overflow-x: auto;
    padding: 20px;
+   overflow-x: auto;
     }
 
 .conteiner{
@@ -107,7 +146,7 @@ margin: 20px;
     flex-direction: column;
   }
   .conteiner-img a:nth-of-type(2){
-    display: inline-block;
+   
     vertical-align: middle;
     max-width: 100%;
     object-fit: contain;
