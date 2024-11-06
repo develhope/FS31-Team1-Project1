@@ -80,7 +80,8 @@
 /* start carosello cards */
 .card-carosello{
     background-color: #00A3DA;
-    padding: 1.875rem 1.25rem
+    padding: 1.875rem 1.25rem;
+    position: relative;
 }
 .titoli{
     display: flex;
@@ -120,7 +121,7 @@ margin: 20px;
 
 .left{
  position: absolute;
-    top: 80%; 
+ top: 50%;
     width: 3%; 
     
 }
@@ -146,7 +147,7 @@ margin: 20px;
 .right{
   position: absolute;
     right: -0px; 
-    top: 80%;
+    top: 50%;
     width: 3%;
     margin-right: 1px;
     
