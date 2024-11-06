@@ -51,6 +51,32 @@
   font-family: var(--font-family-primary);
 }
 
+.d-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--button-border-radius-heavy);
+  border: 1px solid;
+  cursor: pointer;
+  background-color: var(--promo-bgcolor);
+  color: var(--black-button-text-color);
+  padding: var(--button-padding-mid);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 1.5625rem;
+  letter-spacing: normal;
+}   
+.d-btn:hover{
+  background-color: var(--promo-bgcolor-hover);
+  color: #FFFFFF;
+}
+.d-btn svg{
+  height: 16px;
+  width: 16px;
+  margin-left: 12px;
+}
+
+
 /* start carosello cards */
 .card-carosello{
     background-color: #00A3DA;
