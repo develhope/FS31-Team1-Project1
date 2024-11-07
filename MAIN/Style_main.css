@@ -267,29 +267,27 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
 .navbar-bottom{
   height: 4.6875rem;
   margin: 0px auto;
-  padding: 0px 1.875rem;
+  /* padding: 0px 1.875rem; */
   width: 100%;
-  /* max-width: 100rem; */
   display: flex;
-  /* -webkit-box-align: center; */
   align-items: center;
-  gap: 60px;
-  /* align-items: center;
-  justify-content: center; */
+  justify-content: center;
+  /* gap: 60px; */
   background-color: var(--navbar-bottom-bgcolor);
 }
 
 .navbar-bottom-left{
   display: flex;
-  margin-left: 190px;
-  padding-left: 30px;
-  gap: 45px;
+  /* margin: 0 190px; */
+  padding: 0 30px;
+  gap: 50px;
+  align-items: center;
 }
 
 .navbar-bottom-right{
   width: 55%;
   display: flex;
-  margin-right: 190px;
+  /* margin-right: 190px; */
   padding-right: 30px;
   justify-content: flex-end;
   align-items: center;
@@ -301,13 +299,24 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   list-style: none;
   text-transform: uppercase;
   border-bottom: 3px solid transparent;
 }
 
+.navbar-bottom-right ul{
+  gap: 20px;
+}
+
+.navbar-bottom-right ul li{
+  display: flex;
+  align-items: top;
+  gap: 5px;
+}
+
 .navbar-bottom ul li a{
+  margin: 0;
   color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 1rem;
@@ -317,6 +326,7 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
 
 .navbar-bottom ul li a:hover{
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .lente{
@@ -332,6 +342,10 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
   transform: translate(-50%, -50%);
   z-index: 1;
   object-fit: contain;
+}
+
+.navbar-bottom-right ul li:hover{
+  text-decoration: underline;
 }
 
 .btn.area-giochi{
@@ -365,6 +379,7 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
 
 .btn.holiday{
   display: flex;
+  height: 100%;
   justify-content: center;
   align-items: center;
   border-radius: var(--button-border-radius-heavy);
@@ -383,8 +398,38 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
   color: #FFFFFF;
 }
 
-.banner-img{
+.header-img{
+  margin: 0px auto;
+  max-width: 100rem;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  text-align: right;
+}
+
+.header-img-right{
+  padding-right: 120px;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 25px;
+}
+
+.header-img-right-text{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header-img-right-btn{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .btn.compra-socio{
@@ -415,20 +460,34 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
 }
 
 .icons-link{
- 
+    margin: 0px auto;
+    max-width: 100rem;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     flex-wrap: wrap; 
     gap: 30px; 
     padding: 1.25rem 1.5rem;
-  
+    background-color: var(--week-top-picks-bgcolor);
 }
 
 .icons {
 display: flex;
 flex-direction: column;
 gap: 10px;
+text-decoration: none;
+}
+
+.icons a{
+  text-decoration: none;
+}
+
+.icons a:hover{
+  text-decoration: underline;
+}
+
+.icons a:visited{
+  color: inherit
 }
 
 .icons img{
