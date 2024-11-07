@@ -49,6 +49,11 @@
     --button-padding-allArticles: 8px 16px;
 }
 
+.img-logo{
+  height: 55px;
+  weight: 55px
+}
+
 .btn {
     font-family: var(--font-family-primary);
     /* display: flex;
@@ -87,22 +92,69 @@
     margin: 0px auto;
     padding: 0px 1.875rem;
     width: 100%;
-    max-width: 100rem;
+    /* max-width: 100rem; */
     display: flex;
     /* -webkit-box-align: center; */
     align-items: center;
+    gap: 60px;
     /* align-items: center;
     justify-content: center; */
     background-color: var(--navbar-bottom-bgcolor);
   }
+
+  .navbar-bottom-left{
+    display: flex;
+    margin-left: 190px;
+    padding-left: 30px;
+    gap: 45px;
+  }
   
+  .navbar-bottom-right{
+    width: 55%;
+    display: flex;
+    margin-right: 190px;
+    padding-right: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    /* gap: 25px; */
+  }
+
   .navbar-bottom ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+  }
+
+  .navbar-bottom ul li a{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-decoration: none;
+  }
+
+  .navbar-bottom ul li a:hover{
+    text-decoration: underline;
+  }
+
+  .lente{
+    position: relative;
+    width: 60px;
+    height: 85px;
+  }
+
+  .lente img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: contain;
   }
 
   .btn.area-giochi{
