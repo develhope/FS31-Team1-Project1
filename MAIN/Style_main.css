@@ -149,17 +149,18 @@
 /* start carosello cards */
 .card-carosello{
     background-color: #00A3DA;
-    padding: 1.875rem 1.25rem;
+  padding: 70px;
     position: relative;
     max-width: 100rem;
     margin: 0 auto;
-    width: 100%;
 }
 .titoli{
     display: flex;
    align-items: center;
 }
-
+.titoli h2{
+  color: var(--explore-bgcolor);
+}
 .titoli a{
 color: black;
 margin: 20px;
@@ -195,7 +196,8 @@ margin: 20px;
 .left{
  position: absolute;
  top: 50%;
-    width: 3%; 
+    width: 3%;
+   
     
 }
 /* end freccia sinistra */
@@ -250,14 +252,15 @@ margin: 20px;
    position: relative;
    gap: 40px;
    display: flex;
-   padding: 20px;
+   padding: 1.875rem  0px;
    overflow-x: auto;
+  
     }
 
 .conteiner{
   display: flex;
   flex-direction: column;
-   width: 25%;
+   width:20%;
 }
 
   .conteiner-img{
@@ -265,11 +268,14 @@ margin: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-  }
-  .conteiner-img a:nth-of-type(2){
-    width: 100%;
+    width: auto;
     object-fit: cover;
-    height: 100%;
+   height: auto;
+  }
+  .conteiner-img a img:nth-of-type(2){
+  width: 100%;
+    object-fit: cover;
+   height: 100%;
 
   }
   .conteiner-img:hover img {
@@ -316,10 +322,11 @@ margin: 20px;
   .badge-conteiner span{
     background-color: var(--nav-bg-color);
     padding: 4px 8px;
+    font-size: var(--font-size-base);
   }
   .badge-conteiner span:nth-child(2){
     background-color: red;
-    font-weight: bold;
+    font-weight: var(--font-weight-heavy);
     color: white;
   }
  
@@ -339,12 +346,13 @@ margin: 20px;
   .conteiner-bottom a:hover {
     text-decoration: underline;
   }
-  .conteiner-bottom a h3{
+  .conteiner-bottom a h3 span{
    color: var(--add-cart-bgcolor-hover);
-    font-size: var(--font-size-base);
     line-height: 1.5625rem;
     font-weight: bold;
     text-transform: inherit;
+    font-size: var(--font-size-base);
+    
   }
   
   .price-conteiner{
@@ -361,7 +369,9 @@ margin: 20px;
     font-size: 1.3rem;
     font-weight: 700
   }
-
+.price-conteiner span:nth-child(2){
+  color: red;
+}
  
 button{
     border-radius: var(--button-border-radius-heavy);
@@ -387,12 +397,9 @@ button:hover{
 
 .scontato{
     text-decoration: line-through;
+    margin-right: 1px;
 }
 
-.prezzo-nuovo{
-    color: red;
-    
-}
 .stellette{
         display: flex;
     align-items: center;

@@ -12,11 +12,11 @@ function moveCards(distance) {
 
 
 moveLeftButton.addEventListener("click", function() {
-    moveCards(-320); 
+    moveCards(-900); 
 });
 
 moveRightButton.addEventListener("click", function() {
-    moveCards(320); 
+    moveCards(900); 
 });
 
 
