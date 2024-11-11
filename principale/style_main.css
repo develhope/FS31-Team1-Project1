@@ -1,6 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
+  max-width: 100rem;
+  padding: 0px, auto;
+  font-family: var(--font-family-primary);
 }
 
 :root {
@@ -127,14 +128,101 @@
   width: 8px;
 }
 
+/* set in evidenza */
+/* scrollbar settings */
+.featured-items-container::-webkit-scrollbar {
+  height: 6px; 
+}
+
+.featured-items-container::-webkit-scrollbar-thumb {
+  background-color: gray; 
+}
+
+.featured-items-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /
+}
+
+.featured-items-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+  
+}
+/* end scrollbar settings */
+/* freccia sinistra */
+.move-btn{
+  border: none;
+  background-color: var(--spotlight-bgcolor);
+  margin-left: 1px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 50%;
+  border-collapse: collapse;
+  font-weight: var(--font-weight-normal);
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  transform: rotate(180deg)
+;}
+
+.left{
+ position: absolute;
+ top: 50%;
+    width: 3%; 
+    
+}
+/* end freccia sinistra */
+/* freccia destra */
+.move-btnright{
+ border: none;
+ background-color: var(--spotlight-bgcolor);
+  margin-left: 1px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 50%;
+  border-collapse: collapse;
+  font-weight: var(--font-weight-normal);
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.right{
+  position: absolute;
+    right: -0px; 
+    top: 50%;
+    width: 3%;
+    margin-right: 1px;
+    
+  
+}
+/* end freccia destra */
+
 .featured-slider {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
   position: relative;
   padding: 30px 20px;
   background: var(--spotlight-bgcolor);
   font-family: var(--font-family-primary);
   box-sizing: border-box;
+  
+}
+.featured-items-container{
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  padding: 30px 20px;
+  background: var(--spotlight-bgcolor);
+  font-family: var(--font-family-primary);
+  box-sizing: border-box;
+  
 }
 .slide {
   display: flex;
@@ -142,11 +230,7 @@
   width: 100%;
   gap: 1rem;
 }
-.slide:nth-child(2),
-.slide:nth-child(3),
-.slide:nth-child(4) {
-  display: none;
-}
+
 
 .slider-header {
   text-align: start;
