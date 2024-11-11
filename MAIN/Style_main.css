@@ -50,7 +50,8 @@
 *{
   font-family: var(--font-family-primary);
   margin: 0;
-  padding: 0
+  max-width: 100rem;
+  padding: 0px,auto;
 }
 
 .d-btn{
@@ -260,7 +261,7 @@ margin: 20px;
 .conteiner{
   display: flex;
   flex-direction: column;
-   width:20%;
+   width:25%;
 }
 
   .conteiner-img{
