@@ -72,10 +72,12 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+
 }
 
 .navbar-top{
   /* position: relative; */
+  position: relative;
   display: flex;
   /* -webkit-box-align: stretch; */
   align-items: center;
@@ -267,6 +269,7 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
 .navbar-bottom{
   height: 4.6875rem;
   margin: 0px auto;
+  position: relative;
   /* padding: 0px 1.875rem; */
   width: 100%;
   display: flex;

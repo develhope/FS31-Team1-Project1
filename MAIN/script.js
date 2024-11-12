@@ -28,3 +28,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
   
+/* // script.js
+
+ let lastScrollTop = 0;
+
+ const navbar = document.querySelector('.navbar');
+ const navbarTop = document.querySelector('.navbar-top');
+ const navbarBottom = document.querySelector('.navbar-bottom');
+ 
+ window.addEventListener('scroll', function() {
+   const currentScroll = window.scrollY || document.documentElement.scrollTop;
+ 
+   if (currentScroll > lastScrollTop) 
+    {navbarBottom.style.display = "none"; // Usa il valore originale di display
+      navbarTop.style.display = 'none';    // Usa il valore originale di display
+    }
+    else
+     // Scorrimento verso l'alto - mostra la navbar
+     {navbarBottom.style.display = "flex"; // Usa il valore originale di display
+     navbarTop.style.display = 'flex';    // Usa il valore originale di display
+   }
+   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valori negativi
+ });
+ 
+*/
