@@ -599,7 +599,6 @@ font-stretch: 100%;
 
 .navbar.fixed{
   z-index: 1000;
-  
   opacity: 1;
   transform: translateY(0); 
   position: fixed;
@@ -613,8 +612,7 @@ font-stretch: 100%;
 .navbar.hidden {
   pointer-events: none;  
  transform: translateY(-100%);
- /*display: block; /* Mostra la navbar */
- /*opacity: 1;*/
+ 
 }
 
 .header-img.top{
