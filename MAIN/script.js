@@ -26,29 +26,45 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  
-  
-/* // script.js
 
- let lastScrollTop = 0;
+ /*let lastScrollY = window.scrollY;
+const navbar = document.querySelector('.navbar');
+const scrollThreshold = 7.875 * 16; // 7.875rem in pixel
 
- const navbar = document.querySelector('.navbar');
- const navbarTop = document.querySelector('.navbar-top');
- const navbarBottom = document.querySelector('.navbar-bottom');
- 
- window.addEventListener('scroll', function() {
-   const currentScroll = window.scrollY || document.documentElement.scrollTop;
- 
-   if (currentScroll > lastScrollTop) 
-    {navbarBottom.style.display = "none"; // Usa il valore originale di display
-      navbarTop.style.display = 'none';    // Usa il valore originale di display
+window.addEventListener('scroll', () => {
+    if (window.scrollY > scrollThreshold) {
+        if (window.scrollY < lastScrollY) {
+            // Scorrendo verso l'alto, mostra la navbar
+            navbar.classList.remove('hidden');
+        } else {
+            // Scorrendo verso il basso, nasconde la navbar
+            navbar.classList.add('hidden');
+        }
+    } else {
+        // Prima di superare la soglia, la navbar rimane visibile
+        navbar.classList.remove('hidden');
     }
-    else
-     // Scorrimento verso l'alto - mostra la navbar
-     {navbarBottom.style.display = "flex"; // Usa il valore originale di display
-     navbarTop.style.display = 'flex';    // Usa il valore originale di display
-   }
-   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valori negativi
- });
- 
-*/
+    lastScrollY = window.scrollY;
+});
+
+
+ Prove dissolvenza */
+
+  let lastScrollPosition = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.pageYOffset;
+
+    if (currentScrollPosition > lastScrollPosition) {
+        // Nascondi la navbar quando si scorre verso il basso
+        navbar.classList.add('hidden');
+    } else {
+        // Mostra la navbar quando si scorre verso l'alto
+        navbar.classList.remove('hidden');
+    }
+
+    lastScrollPosition = currentScrollPosition; // Aggiorna la posizione di scorrimento
+});
+
+  

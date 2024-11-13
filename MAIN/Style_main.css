@@ -66,14 +66,14 @@
   padding: 50px; */
 }
 
-.navbar {
+/*.navbar {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
 
-}
+}*/
 
 .navbar-top{
   /* position: relative; */
@@ -403,6 +403,7 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
 
 .header-img{
   margin: 0px auto;
+
   max-width: 100rem;
   position: relative;
   display: flex;
@@ -582,4 +583,30 @@ font-stretch: 100%;
   background-color: #00000099;
   display: none;
   z-index: 998; 
+}
+
+
+/*prove per dissolvenza*/
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0); 
+    position: fixed;
+  top: 0;
+}
+
+
+.navbar.hidden {
+  opacity: 0;  
+  pointer-events: none;  
+ transform: translateY(-100%);
+ /*display: block; /* Mostra la navbar */
+ /*opacity: 1;*/
 }
