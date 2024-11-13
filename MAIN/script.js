@@ -50,21 +50,71 @@ window.addEventListener('scroll', () => {
 
  Prove dissolvenza */
 
-  let lastScrollPosition = 0;
+ /*let lastScrollPosition = 0;
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-    const currentScrollPosition = window.pageYOffset;
+    const currentScrollPosition = window.scrollY;
 
     if (currentScrollPosition > lastScrollPosition) {
         // Nascondi la navbar quando si scorre verso il basso
-        navbar.classList.add('hidden');
+       
+        navbar.classList.remove('fixed');
     } else {
         // Mostra la navbar quando si scorre verso l'alto
         navbar.classList.remove('hidden');
+        navbar.classList.add('fixed');
+
+    }
+
+    lastScrollPosition = currentScrollPosition; // Aggiorna la posizione di scorrimento
+});*/
+
+/*let lastScrollPosition = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition === 0) {
+        // Rimuovi le classi fixed e hidden quando sei in cima alla pagina
+        navbar.classList.remove('fixed', 'hidden');
+    } else if (currentScrollPosition > lastScrollPosition) {
+        // Nascondi la navbar quando si scorre verso il basso
+        navbar.classList.add('hidden');
+        navbar.classList.remove('fixed');
+    } else {
+        // Mostra la navbar quando si scorre verso l'alto
+        navbar.classList.remove('hidden');
+        navbar.classList.add('fixed');
+    }
+
+    lastScrollPosition = currentScrollPosition; // Aggiorna la posizione di scorrimento
+});*/
+
+let lastScrollPosition = 0;
+const navbar = document.querySelector('.navbar');
+const triggerHeight = 7.875 * 16; // Converti 7.875rem in pixel (126 pixel)
+
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition < triggerHeight) {
+        // Rimuovi le classi fixed e hidden se siamo sopra il triggerHeight
+        navbar.classList.remove('fixed', 'hidden');
+    } else if (currentScrollPosition > lastScrollPosition) {
+        // Nascondi la navbar quando si scorre verso il basso
+        navbar.classList.add('hidden');
+        navbar.classList.remove('fixed');
+    } else {
+        // Mostra la navbar quando si scorre verso l'alto
+        navbar.classList.remove('hidden');
+        navbar.classList.add('fixed');
     }
 
     lastScrollPosition = currentScrollPosition; // Aggiorna la posizione di scorrimento
 });
+
+
 
   
