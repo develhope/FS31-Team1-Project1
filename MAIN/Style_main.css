@@ -616,3 +616,55 @@ font-stretch: 100%;
 }
 
 /*Fine prove dissolvenza*/
+
+.section-in-evidenza{
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.section-in-evidenza h3{
+  background-color: var(--week-top-picks-bgcolor);
+}
+
+.in-evidenza{
+  background-color: var(--week-top-picks-bgcolor);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+
+.viola{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.arancione{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+}
+
+.gialla{
+  grid-column: 2/3;
+  grid-row: 2/2;
+  display: flex;
+}
+
+.viola-top{
+  display: flex;
+  flex-direction: column;
+}
+
+.arancione-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.gialla-left{
+  display: flex;
+  flex-direction: column;
+}
