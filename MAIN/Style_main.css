@@ -594,13 +594,13 @@ font-stretch: 100%;
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease, transform 0.5s ease;
+ 
     
 }
 
 .navbar.fixed{
   z-index: 1000;
-  opacity: 1;
-  transform: translateY(0); 
+  opacity: 1; 
   position: fixed;
   top: 0;
   display: flex;
@@ -613,14 +613,4 @@ font-stretch: 100%;
   pointer-events: none;  
  transform: translateY(-100%);
  
-}
-
-.header-img.top{
-  margin: 0px auto;
- margin-top: 7.875rem;
-  max-width: 100rem;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  text-align: right;
 }

@@ -26,24 +26,28 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+
 let lastScrollPosition = 0;
 const navbar = document.querySelector('.navbar');
-const triggerHeight = 7.875 * 16; 
+const triggerHeight = 126; 
 
 window.addEventListener('scroll', () => {
     const currentScrollPosition = window.scrollY;
 
     if (currentScrollPosition < triggerHeight) {
         // Rimuovi le classi fixed e hidden se siamo sopra il triggerHeight
-        navbar.classList.remove('fixed', 'hidden');
-    } else if (currentScrollPosition > lastScrollPosition) {
+        navbar.classList.remove('fixed','hidden');
+    } 
+    
+    else if (currentScrollPosition > lastScrollPosition) {
         // Nascondi la navbar quando si scorre verso il basso
-        navbar.classList.add('hidden');
-        navbar.classList.remove('fixed');
+        navbar.classList.add( 'hidden');
+        //navbar.classList.remove('fixed');
     } else {
         // Mostra la navbar quando si scorre verso l'alto
         navbar.classList.remove('hidden');
         navbar.classList.add('fixed');
+        //Portare il correnscroll = 0 e disattivare il fixed solo in quel caso
     }
 
     lastScrollPosition = currentScrollPosition; // Aggiorna la posizione di scorrimento
