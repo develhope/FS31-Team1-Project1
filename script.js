@@ -1,7 +1,7 @@
 // script.js
 const moveLeftButton = document.getElementById("move-left");
 const moveRightButton = document.getElementById("move-right");
-const cardCaroselloWrapper = document.querySelector("slider-wrapper");
+const cardCaroselloWrapper = document.querySelector("product-container");
 
 function moveCards(distance) {
     cardCaroselloWrapper.scrollBy({

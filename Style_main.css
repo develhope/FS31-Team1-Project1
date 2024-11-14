@@ -1,11 +1,30 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
+
+.slider-wrapper{
+    position: relative;
+    max-width: 200rem;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.product-container {
+    gap: 20px;
+    display: flex;
+   width: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+    
+}
+
 /* scrollbar settings */
 .product-container::-webkit-scrollbar {
-    height: 6px; 
+    height: 8px; 
+    
   }
   
   .product-container::-webkit-scrollbar-thumb {
@@ -18,7 +37,7 @@
   
   .product-container::-webkit-scrollbar-track {
     background-color: #f1f1f1; 
-    
+   
   }
   /* end scrollbar settings */
   /* freccia sinistra */
@@ -78,27 +97,6 @@
   }
   /* end freccia destra */
   
-.slider-wrapper{
-    position: relative;
-    max-width: 200rem;
-    margin: 0 auto;
-    overflow-x: auto;
-}
-
-.product-container {
-    gap: 20px;
-    display: flex;
-    aspect-ratio: 16/6;   
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; 
-}
-.product-container  img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-
 
 .dimensione {
     display: flex;
@@ -107,20 +105,12 @@
     margin-bottom: 5px;
     width: 15px;
 }
-.product {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-}
 
 h2 {
     margin-bottom: 20px;
     justify-content:flex-start;
 }
-.product p {
-    margin: 5px 0;
-}
+
 .exclusive {
     color: #000000;
     background-color: #ffee00;
@@ -150,9 +140,29 @@ button:hover {
     padding-top: 10px;
 }
 .prova{
-    padding: 1.875rem 2.50rem;
-    max-width: 100rem;
-    margin: auto;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
-
-
+.card{
+    box-sizing:content-box;
+    flex-shrink: 0;
+    padding-left: 1.25rem;
+    width:25%;
+    margin-top: auto;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+.product-container{
+    display: flex;
+flex-flow: row nowrap;
+align-items: stretch;
+justify-content: space-between;
+margin-top: 10px;
+}
