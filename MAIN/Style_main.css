@@ -49,7 +49,7 @@
   
 *{
   font-family: var(--font-family-primary);
-  margin: 0;
+  margin: 0 auto;
   max-width: 100rem;
   padding: 0px,auto;
 }
