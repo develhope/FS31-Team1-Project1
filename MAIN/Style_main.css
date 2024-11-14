@@ -516,9 +516,6 @@ text-decoration: none;
 }
 
 
-
-
-
 /*Input text cerca*/
 
 .input-contenitore-cerca{
@@ -584,6 +581,9 @@ font-stretch: 100%;
   z-index: 998; 
 }
 
+.no-scroll {
+  overflow: hidden;
+}
 
 /*prove per dissolvenza*/
 
@@ -614,3 +614,5 @@ font-stretch: 100%;
  transform: translateY(-100%);
  
 }
+
+/*Fine prove dissolvenza*/

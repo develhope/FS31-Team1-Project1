@@ -1,3 +1,5 @@
+
+//Sezione della lente
 document.addEventListener('DOMContentLoaded', function() {
     const lente = document.querySelector('.lente');
     const inputContenitoreCerca = document.querySelector('.input-contenitore-cerca');
@@ -14,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
       lente.style.display = 'none';
       inputContenitoreCerca.style.display = 'flex';
       overlay.style.display = 'block'; 
+      document.body.classList.add('no-scroll');
     });
   
     // Quando si clicca sulla X 
@@ -21,11 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
       inputContenitoreCerca.style.display = 'none';
       lente.style.display = 'block';
       overlay.style.display = 'none'; 
+      document.body.classList.remove('no-scroll');
 
     });
   });
 
+//fINE SEZIONE LENTE
 
+//Inizio sezione dissolvenza
 
 let lastScrollPosition = 0;
 const navbar = document.querySelector('.navbar');
@@ -53,4 +59,4 @@ window.addEventListener('scroll', () => {
     lastScrollPosition = currentScrollPosition; // Aggiorna la posizione di scorrimento
 });
 
-  
+//Fine sezione dissolvenza
