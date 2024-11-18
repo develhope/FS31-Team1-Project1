@@ -115,7 +115,26 @@
     padding: 40px 20px;
   }
 
-  .bby-bottom>button{
-    
+  .bby-link-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62.4375rem;
+    border: 2px solid;
+    cursor: pointer;
+    background-color: var(--explore-bgcolor);
+    color: #FFFFFF;
+    padding: var(--button-padding-allArticles);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5rem;
+    width: max-content;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+  }   
+  
+  .bby-link-button:hover{
+    background-color:var(--explore-bgcolor-hover);
+    color: #FFFFFF;
+    text-decoration: underline;
   }
-
