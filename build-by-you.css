@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: var(--font-family-primary);
   }
   
   :root{
@@ -48,3 +49,73 @@
    --button-padding-big: 15px;
    --button-padding-allArticles: 8px 16px;
   }
+
+
+  .bby-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bby-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 40%;
+    padding: 40px 20px;
+  }
+
+  .bby-top>h2{
+    font-size: var(--font-size-title-1);
+    font-weight: 700;
+  }
+
+  .bby-top>p{
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    font-weight: var(--font-weight-normal);
+    text-align: center;
+  }
+
+  .bby-card-section{
+    display: flex;
+    width: 100rem;
+
+  }
+
+  .bby-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bby-img{
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    padding: 10px;
+    position: relative;
+  }
+  .bby-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .bby-card>a{
+    position: relative;
+    bottom: 10%;
+    color: white;
+    text-decoration: none;
+  }
+  .bby-card>a:hover{
+    text-decoration: underline;
+  }
+
+  .bby-bottom{
+    padding: 40px 20px;
+  }
+
+  .bby-bottom>button{
+    
+  }
+
