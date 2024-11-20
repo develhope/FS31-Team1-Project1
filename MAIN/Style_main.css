@@ -263,6 +263,22 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
   justify-content: center;
   /* gap: 60px; */
   background-color: var(--navbar-bottom-bgcolor);
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.navbar-bottom.fixed {
+  z-index: 1000;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-bottom.hidden {
+  pointer-events: none;
+  transform: translateY(-100%);
 }
 
 .navbar-bottom-left {
@@ -322,6 +338,7 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
   position: relative;
   width: 60px;
   height: 85px;
+  cursor: pointer;
 }
 
 .lente img {
@@ -578,10 +595,10 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
   width: 100%;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease, transform 0.5s ease;
+  /* transition: opacity 0.3s ease, transform 0.5s ease; */
 }
 
-.navbar.fixed {
+/* .navbar.fixed {
   z-index: 1000;
   opacity: 1;
   position: fixed;
@@ -595,7 +612,7 @@ input#slide3:checked ~ .arrows:nth-of-type(3) {
 .navbar.hidden {
   pointer-events: none;
   transform: translateY(-100%);
-}
+} */
 
 /*Fine prove dissolvenza*/
 
