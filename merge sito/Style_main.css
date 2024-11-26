@@ -1983,7 +1983,18 @@ footer a{
   flex: 1 1 0%;
   max-width: 245px;
 }
-
+.secondo-contenitore img{
+  display: none;
+}
+.terzo-contenitore img{
+  display: none;
+}
+.quarto-contenitore img{
+  display: none;
+}
+.quinto-contenitore img{
+  display: none;
+}
 .footer-h3{
   margin-bottom: 25px;
   padding: 0 15px;
@@ -2915,10 +2926,12 @@ display: flex;
     color: rgb(255, 255, 255);
     display: flex;
     cursor: pointer;
+    width: 380px;
     
    }
    .contenitore-flex div{
     padding-left: 0;
+
    }
    
    
@@ -2932,14 +2945,17 @@ display: flex;
      font-size: 16px;
      border-top: 1px solid #ffffff;
      width: 390px;
+     
     
    } 
  
    .second-contenitore-centro {
-padding: 20px;
+padding: 20px 20px 0;
 margin-bottom: 1.875rem;
-width: 100%;
-
+max-width: 390px;
+margin-left: 0;
+margin-right: 10px;
+border-top: 1px solid white;
 }
    .marketing{
     display: none;
@@ -2998,8 +3014,64 @@ width: 100%;
     width: 40px;  
     height: 40px; 
    }
-   
+    
+   /* frecce footer */
+.secondo-contenitore{
+  width: 390px;
+}
+.terzo-contenitore{
+  width: 390px;
+}
+.quarto-contenitore{
+  width: 390px;
+}
+.quinto-contenitore{
+  width: 390px;
+}
+.secondo-contenitore img{
+  transform: rotate(90deg);
+  position: relative;
+  left: 350px;
+  width: 15px;
+  bottom: 35px;
+  filter: brightness(0) invert(1);
+  display: block;
 
+}
+.terzo-contenitore img{
+  transform: rotate(90deg);
+  position: relative;
+  left: 350px;
+  width: 15px;
+  bottom: 35px;
+  filter: brightness(0) invert(1);
+  display: block;
+
+
+}
+.quarto-contenitore img{
+  transform: rotate(90deg);
+  position: relative;
+  left: 350px;
+  width: 15px;
+  bottom: 35px;
+  filter: brightness(0) invert(1);
+  display: block;
+
+
+}
+.quinto-contenitore img{
+  transform: rotate(90deg);
+  position: relative;
+  left: 350px;
+  width: 15px;
+  bottom: 35px;
+  filter: brightness(0) invert(1);
+  display: block;
+
+
+}
+/* end */
    .second-contenitore-sotto {
      padding: 0;
      border-top: 0.5px solid #ffffff;
