@@ -1983,15 +1983,7 @@ footer a{
   flex: 1 1 0%;
   max-width: 245px;
 }
-.secondo-contenitore-lista{
-  display: block;
-}
-.quarto-contenitore-lista ul{
-  display: block;
-}
-.quinto-contenitore-lista ul{
-  display: block;
-}
+
 .footer-h3{
   margin-bottom: 25px;
   padding: 0 15px;
@@ -2925,6 +2917,9 @@ display: flex;
     cursor: pointer;
     
    }
+   .contenitore-flex div{
+    padding-left: 0;
+   }
    
    
  
@@ -2948,6 +2943,9 @@ width: 100%;
 }
    .marketing{
     display: none;
+   }
+   .marketing-mobile{
+    display: block;
    }
    .marketing-mobile h3{
     color: white;
