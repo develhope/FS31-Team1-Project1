@@ -1919,6 +1919,9 @@
 .welcometo span a:hover {
   text-decoration: underline;
 }
+#toggle-button{
+  display: none;
+}
 
 /* footer */
 footer ul{
@@ -2778,6 +2781,13 @@ display: inline-block;
 /*welcometo*/
 .hidden {
   display: none; 
+}
+#toggle-button{
+  display: block;
+  color: #007bff;
+}
+#toggle-button:active, #toggle-button:focus{
+  color: #007bff;
 }
 /*end welcometo*/
 
